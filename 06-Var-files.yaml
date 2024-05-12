@@ -1,0 +1,8 @@
+- name: variables from files
+  hosts: localhost
+  vars_files:
+  - vars.yaml 
+  tasks:
+  - name: print override information
+    ansible.builtin.debug:
+      msg: "hello from {{course}} from trainer {{Trainer}}, Duration is {{Duration}}"
