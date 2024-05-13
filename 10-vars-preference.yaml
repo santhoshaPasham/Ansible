@@ -2,7 +2,7 @@
   hosts: localhost
   vars:
     wishes: "Good morning from PLAY level"
-  vars:
+  vars_files:
   - vars.yaml
   tasks:
   - name: vars information
