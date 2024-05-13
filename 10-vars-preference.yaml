@@ -1,7 +1,7 @@
 - name: print the information
   hosts: localhost
-  vars:
-    wishes: "Good morning from PLAY level"
+  # vars:
+  #   wishes: "Good morning from PLAY level"
   vars_files:
   - vars.yaml
   # vars_prompt:
@@ -21,4 +21,4 @@
 #2. task level 
 #3. variable file
 #4. prompt
-    
+#5. play level
