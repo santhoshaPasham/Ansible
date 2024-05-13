@@ -1,0 +1,13 @@
+- name: print the information
+  hosts: localhost
+  vars:
+    wishes: "Good morning from PLAY level"
+  vars:
+  - vars.yaml
+  tasks:
+  - name: vars information
+    vars:
+      wishes: "Good morning from task level"
+    ansible.builtin.debug:
+      msg: " hello {{wishes}} to everyone"
+    
