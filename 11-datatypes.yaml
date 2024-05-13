@@ -10,7 +10,7 @@
       Devops: 3
       AWS: 2
       cloud: 1
-    real project: true #boolean
+    real_project: true #boolean
   tasks: 
   - name: print variables
     ansible.builtin.debug:
