@@ -4,6 +4,11 @@
     wishes: "Good morning from PLAY level"
   vars_files:
   - vars.yaml
+  vars_prompt:
+  - name: wishes
+    prompt: please enter wishes
+    private: false
+
   tasks:
   - name: vars information
     vars:
