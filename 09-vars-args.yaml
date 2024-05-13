@@ -1,0 +1,6 @@
+- name: print the information 
+  hosts: localhost
+  tasks:
+  - name: vars from arguments
+    ansib;le.builtin.debug:
+      msg: "Hello {{PERSON}}, good {{WISHES}}"
