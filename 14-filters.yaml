@@ -1,6 +1,11 @@
 - name: variables
   hosts: localhost
+  vars:
+    greetings: 
   tasks:
   - name: print a message
     ansible.builtin.debug:
       msg: "Course is {{Course | default('Ansible') }}"
+  - name: convert to upper case
+    ansible.builtin.debug:
+      msg: "{{ greeting | upper}}"
